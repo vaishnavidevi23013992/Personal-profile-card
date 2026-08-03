@@ -1,57 +1,3 @@
-# Ex03 Personal Profile Card
-## Date:03/08/26
-
-## Aim
-
-To design and develop a responsive and attractive Personal Profile Card using HTML and CSS that displays personal information, profile image, skills, hobbies, and social media links with modern styling and interactive effects.
-
-## Algorithm
-
-### Step 1
-Create an HTML file (`index.html`).
-
-### Step 2
-Create a CSS file (`style.css`).
-
-### Step 3
-Add the basic HTML structure with title and meta tags.
-
-### Step 4
-Create a profile card container using the `<div>` element.
-
-### Step 5
-Insert a profile image, name, designation, and short introduction.
-
-### Step 6
-Add sections for About Me, Skills, and Hobbies.
-
-### Step 7
-Include a Contact Me button and social media icons.
-
-### Step 8
-Apply CSS styles to center the profile card on the page.
-
-### Step 9
-Use a gradient background with glassmorphism effects.
-
-### Step 10
-Add animations, hover effects, and smooth transitions.
-
-### Step 11
-Make the design responsive using CSS media queries.
-
-### Step 12
-Test the webpage in different browsers and screen sizes.
-
-### Step 13
-Deploy the project.
-
-### Step 14
-Host the project using GitHub Pages.
-
-## Program
-## index.html
-```
 <!DOCTYPE html>
 <html lang="en">
 
@@ -205,122 +151,51 @@ Host the project using GitHub Pages.
             </div>
 
         </div>
-```
-## style.css
-```
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
+        <!-- Hobbies -->
 
-body{
+        <div class="section">
 
-    min-height:100vh;
+            <h2>Hobbies</h2>
 
-    display:flex;
+            <ul>
 
-    justify-content:center;
+                <li>💻 Coding</li>
 
-    align-items:center;
+                <li>📷 Photography</li>
 
-    background:linear-gradient(
-        135deg,
-        #0f172a,
-        #1e293b,
-        #312e81,
-        #0f766e
-    );
+                <li>✈ Traveling</li>
 
-    background-size:400% 400%;
+            </ul>
 
-    animation:gradientBG 15s ease infinite;
+        </div>
 
-    overflow:hidden;
+        <!-- Button -->
 
-    padding:40px;
+        <button>
 
-}
+            <i class="fa-solid fa-paper-plane"></i>
 
-/* Animated Gradient */
+            Contact Me
 
-@keyframes gradientBG{
+        </button>
 
-0%{
-background-position:0% 50%;
-}
+        <!-- Social -->
 
-50%{
-background-position:100% 50%;
-}
+        <div class="social">
 
-100%{
-background-position:0% 50%;
-}
+            <a href="#"><i class="fab fa-github"></i></a>
 
-}
+            <a href="#"><i class="fab fa-linkedin"></i></a>
 
-/* ================================
-      FLOATING GLOW CIRCLES
-================================ */
+            <a href="#"><i class="fab fa-instagram"></i></a>
 
-.bg-animation span{
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
 
-position:absolute;
+        </div>
 
-display:block;
+    </div>
 
-border-radius:50%;
+</body>
 
-filter:blur(40px);
-
-opacity:.35;
-
-animation:float 12s linear infinite;
-
-}
-
-.bg-animation span:nth-child(1){
-
-width:220px;
-height:220px;
-background:#00e5ff;
-left:5%;
-top:15%;
-
-}
-
-.bg-animation span:nth-child(2){
-
-width:280px;
-height:280px;
-background:#ff00c8;
-right:8%;
-top:10%;
-
-animation-delay:3s;
-
-}
-
-.bg-animation span:nth-child(3){
-
-width:180px;
-height:180px;
-background:#ffee00;
-left:20%;
-bottom:10%;
-
-animation-delay:6s;
-
-}
-```
-
-## Output
-
-![alt text](output.png)
-
-## Result
-
-The Personal Profile Card was designed successfully using HTML and CSS. The webpage includes a responsive layout, modern glassmorphism design, animated effects, skill bars, hobbies section, and social media icons. The project was successfully deployed using GitHub Pages.
+</html>
