@@ -1,4 +1,4 @@
-# Ex03 Personal Profile Card
+# Personal Profile Card
 ## Date:03/08/26
 
 ## Aim
